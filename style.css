@@ -121,7 +121,6 @@ footer {
         align-items: right;
         flex-direction: column;
         gap: 1rem;
-
       }
       .container-item {
         padding: 5%;
@@ -136,4 +135,13 @@ footer {
       img {
         float: left;
         margin-right: 1em;
+      }
+      .container-contact {
+        display: flex;
+        padding: 5%;
+        margin-top: 5%;
+        background-color:#0088a9;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
       }
