@@ -96,22 +96,13 @@ footer {
     /* 
     index page
     */   
-       h1 {
+      h1 {
         font-size: 2em;
       }
       
       h2 {
         font-size: 1.5em;
       } 
-      
-      .quote {
-        font-weight: 100;
-        color: white;
-        text-shadow: 1px 1px 2px black;
-        font-size: 3em;
-        text-align: center;
-        margin-top: 2em;
-      }
 
 /* portfolio page */
       .container {
@@ -137,6 +128,16 @@ footer {
         margin-right: 1em;
       }
       .container-contact {
+        display: flex;
+        padding: 5%;
+        margin-top: 5%;
+        background-color:#0088a9;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .container-index {
         display: flex;
         padding: 5%;
         margin-top: 5%;
