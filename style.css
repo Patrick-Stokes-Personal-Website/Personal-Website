@@ -124,13 +124,13 @@ footer {
 
       }
       .container-item {
-        display: flex;
         padding: 5%;
+        margin-top: 5%;
         background-color:#395B64;
-        justify-content:left;
-        align-items: right;
-        flex-direction: column;
-        gap: 1rem; 
+      }
+
+      .container-item hr {
+        margin: 20px 0px;
       }
 
       img {
