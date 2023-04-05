@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 /*General Layout Settings */
 * {
@@ -9,34 +9,29 @@
 }
 
 body {
-  background-color: #24252A;
+  background-color: #24252a;
   max-width: 960px;
   margin: 0 auto;
 }
 
 li,a,p,h2,h3,label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
-  color: #E7F6F2;
+  color: #e7f6f2;
 }
 
 h1 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-weight: 500;
   font-size: 2em;
   text-decoration: none;
-  color: #E7F6F2;
+  color: #e7f6f2;
 }
 
 h2 {
   font-size: 1.5em;
-}
-
-img {
-  float: left;
-  margin-right: 1em;
 }
 
 .main {
@@ -45,15 +40,37 @@ img {
 }
 
 #indexH1 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-weight: 500;
   font-size: 70px;
   text-align: center;
 }
 
+.circular img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid #0088a9;
+}
+
+.circular-about {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.about:nth-of-type(odd) > img {
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+.about:nth-of-type(even) > img {
+  float: right;
+  margin: 0 0 24px 24px;
+}
+
 /*Header/Navbar Section */
 header {
-  background-color: #24252A;
+  background-color: #24252a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +98,7 @@ header {
 
 .nav-links li a:hover {
   transition: all 0.3s ease 0s;
-  color: #0088a9
+  color: #0088a9;
 }
 
 /*Footer Section */
@@ -90,7 +107,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  background-color: #24252A;
+  background-color: #24252a;
   padding: 30px 10%;
   height: 64px;
   padding: 16px;
@@ -127,7 +144,7 @@ footer p {
 .container-item {
   padding: 5%;
   margin-top: 5%;
-  background-color: #0088a9
+  background-color: #0088a9;
 }
 
 .container-item hr {
@@ -159,4 +176,22 @@ footer p {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+.container-img {
+  float: left;
+  margin-right: 1em;
+}
+
+.container-index-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
