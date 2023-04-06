@@ -16,7 +16,7 @@ input[type="checkbox"] {
   display: flex;
   gap: 1em;
   font-size: 18px;
-  }
+}
 
 /*HAMBURGER MENU*/
 
@@ -25,6 +25,7 @@ input[type="checkbox"] {
   font-size: 24px;
   user-select: none;
 }
+
 /* APPLYING MEDIA QUERIES */
 
 @media (max-width: 768px) {
@@ -38,11 +39,11 @@ input[type="checkbox"] {
     padding: 16px 0;
   }
 
-  .menu li + li {
+  .menu li+li {
     margin-top: 12px;
   }
 
-  input[type="checkbox"]:checked ~ .menu {
+  input[type="checkbox"]:checked~.menu {
     display: block;
   }
 
@@ -59,7 +60,12 @@ body {
   padding-right: 5%;
 }
 
-li,a,p,h2,h3,label {
+li,
+a,
+p,
+h2,
+h3,
+label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -103,12 +109,13 @@ h2 {
   height: 200px;
   border-radius: 100%;
 }
-.about:nth-of-type(odd) > img {
+
+.about:nth-of-type(odd)>img {
   float: left;
   margin: 0 24px 24px 0;
 }
 
-.about:nth-of-type(even) > img {
+.about:nth-of-type(even)>img {
   float: right;
   margin: 0 0 24px 24px;
 }
