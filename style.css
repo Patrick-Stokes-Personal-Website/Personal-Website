@@ -55,6 +55,8 @@ body {
   background-color: #24252a;
   max-width: 960px;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 li,a,p,h2,h3,label {
