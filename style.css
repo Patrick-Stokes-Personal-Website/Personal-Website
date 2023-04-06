@@ -8,6 +8,49 @@
   padding: 0;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  }
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #24252a;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 body {
   background-color: #24252a;
   max-width: 960px;
@@ -83,11 +126,11 @@ header {
   box-shadow: 0px 2px 4px -2px black;
 }
 
-.nav-links {
+li {
   list-style: none;
 }
 
-.nav-links li {
+.nav-links1 li {
   display: inline-block;
   padding: 0px 20px;
 }
