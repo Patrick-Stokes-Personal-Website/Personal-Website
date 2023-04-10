@@ -8,26 +8,7 @@
   padding: 0;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-.menu {
-  display: flex;
-  gap: 2em;
-  font-size: 18px;
-}
-
-/*HAMBURGER MENU*/
-
-.hamburger {
-  display: none;
-  font-size: 18px;
-  user-select: none;
-}
-
-/* APPLYING MEDIA QUERIES */
-
+/*MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -54,6 +35,23 @@ input[type="checkbox"] {
   .about {
     display: inline-block;
   }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 2em;
+  font-size: 18px;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 18px;
+  user-select: none;
 }
 
 body {
@@ -115,6 +113,16 @@ h2 {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 2em;
+  border: solid #e7f6f2;
+}
+.btn:hover {
+  transition: all 0.3s ease 0s;
+  background: #f64f59;
 }
 
 .about:nth-of-type(odd)>img {
@@ -211,7 +219,7 @@ footer p {
   background: linear-gradient(
     45deg,
     #12c2e9,
-    #0d15ef
+    #c471ed
   );
 }
 
@@ -225,8 +233,8 @@ footer p {
   margin-top: 5%;
   background: linear-gradient(
     45deg,
-    #12c2e9,
-    #0d15ef
+    #c471ed,
+    #f64f59
   );
   align-items: center;
   flex-direction: column;
